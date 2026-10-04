@@ -4,65 +4,138 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KARU Tweaks</title>
-  <meta name="description" content="KARU Tweaks applies competitive Windows settings for the match and puts them back when you stop.">
+  <meta name="description" content="KARU Tweaks sets Windows for a competitive match and restores it when you stop.">
   <link rel="canonical" href="https://karu999.github.io/en-eu/">
   <link rel="alternate" hreflang="en" href="https://karu999.github.io/en-eu/">
   <link rel="alternate" hreflang="fi" href="https://karu999.github.io/fi-fi/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <a class="brand" href="/en-eu/">KARU</a>
-      <nav>
+    <header class="nav">
+      <a class="brand" href="./"><span class="mark">K</span> KARU</a>
+      <nav class="links">
         <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
         <a href="#download">Download</a>
-        <span class="locales">
-          <a href="/en-eu/" aria-current="page">EN-EU</a>
-          <a href="/fi-fi/">FI-FI</a>
-        </span>
       </nav>
+      <div class="nav-right">
+        <span class="locales">
+          <a href="./" aria-current="page">EN-EU</a>
+          <a href="../fi-fi/">FI-FI</a>
+        </span>
+        <a class="solid" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Download</a>
+      </div>
     </header>
 
     <section class="hero">
-      <p class="kicker">Windows · competitive</p>
-      <h1>Settings for the match, then back.</h1>
-      <p class="lead">KARU Tweaks is a Windows app. Game Mode applies the competitive set while a detected game is open and restores it when you press Stop. Fortnite and Valorant keep their own config files. BIOS rows that Windows cannot change stay as steps in the BIOS menu.</p>
+      <p class="kicker">Windows for competitive play</p>
+      <h1>Set the PC for the match.</h1>
+      <p class="lead">KARU Tweaks applies the competitive set while a game is open and puts your settings back when you press Stop. Fortnite and Valorant keep their own config. BIOS steps that Windows cannot change stay in the BIOS menu.</p>
       <div class="actions">
-        <a class="btn primary" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Download 0.1.45</a>
-        <a class="btn" href="#product">See what it does</a>
+        <a class="solid lg" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Download for Windows</a>
+        <a class="ghost lg" href="#pricing">See pricing</a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="winbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><strong>KARU Tweaks</strong></div>
+          <div class="win">
+            <aside class="side">
+              <div class="on">Home</div>
+              <div>Game Mode</div>
+              <div>Hardware</div>
+              <div>Network</div>
+              <div>Fixes</div>
+            </aside>
+            <div class="panel">
+              <div class="meters">
+                <div class="meter"><span>CPU</span><b>Ready</b></div>
+                <div class="meter"><span>GPU</span><b>High</b></div>
+                <div class="meter"><span>Timer</span><b>0.5 ms</b></div>
+              </div>
+              <div class="mode">
+                <div>
+                  <strong>Game Mode</strong>
+                  <p>Applies for the open game. Stop restores the saved values.</p>
+                </div>
+                <span class="pill">Stop</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="grid" id="product">
+    <section class="facts" id="product">
       <article>
-        <span>01</span>
         <h2>Game Mode</h2>
-        <p>One apply for the open game. CPU, capture, and the timer change for that session. Stop puts the saved values back.</p>
+        <p>One apply for the match. CPU, capture, and the timer change for that session, then come back.</p>
       </article>
       <article>
-        <span>02</span>
         <h2>Each game</h2>
-        <p>Fortnite writes its own graphics file, with view distance left at medium. Valorant gets fullscreen and VSync off. Vanguard stays on.</p>
+        <p>Fortnite keeps view distance at medium. Valorant gets fullscreen and VSync off. Vanguard stays on.</p>
       </article>
       <article>
-        <span>03</span>
-        <h2>Premium</h2>
-        <p>General Windows switches are free. The competitive pages are 45 EUR. Every paid switch has a restore.</p>
+        <h2>A restore for every switch</h2>
+        <p>Turn a tweak off and the values it wrote go back. The app reads the current setting before it changes it.</p>
       </article>
+    </section>
+
+    <section class="section">
+      <h2>What you actually get</h2>
+      <p>The same tools that are in the app, shown without invented FPS numbers.</p>
+      <div class="grid">
+        <article class="card"><span>01</span><h3>Timer</h3><p>A 0.5 ms timer while you want it. Your saved timer wins over Game Mode's default.</p></article>
+        <article class="card"><span>02</span><h3>Network</h3><p>DNS, adapter tuning, and a bufferbloat check. The firewall stays on.</p></article>
+        <article class="card"><span>03</span><h3>Power</h3><p>A competitive power plan for the session, with the old plan values saved.</p></article>
+        <article class="card"><span>04</span><h3>GPU and mouse</h3><p>High-performance GPU for the game, and Windows mouse acceleration off.</p></article>
+        <article class="card"><span>05</span><h3>BIOS guide</h3><p>The page reads your board and lists the recommended values. You change the firmware in the BIOS menu.</p></article>
+        <article class="card"><span>06</span><h3>Fixes</h3><p>Repairs for a stuck taskbar, DNS, audio, and a Roblox 268 protection restore.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <h2>Pricing</h2>
+      <p>General Windows switches are free. The competitive pages are one premium unlock.</p>
+      <div class="prices">
+        <article class="price">
+          <span>Free</span>
+          <h3>General</h3>
+          <b>0 EUR</b>
+          <ul>
+            <li>Notifications, widgets, and visual switches</li>
+            <li>The installer and the app</li>
+            <li>Restore on the switches you use</li>
+          </ul>
+        </article>
+        <article class="price hot">
+          <span>Premium</span>
+          <h3>Competitive</h3>
+          <b>45 EUR</b>
+          <ul>
+            <li>Game Mode</li>
+            <li>Hardware, network, and power pages</li>
+            <li>Fortnite and Valorant configs</li>
+          </ul>
+          <a class="solid" href="#download">Download first</a>
+        </article>
+      </div>
     </section>
 
     <section class="band" id="download">
       <div>
         <h2>Windows 10 and 11</h2>
-        <p>The installer is KARU Tweaks 0.1.45. Run it on the PC you play on. The app reads the current settings before it changes them.</p>
+        <p>KARU Tweaks 0.1.45. Install it on the PC you play on.</p>
       </div>
-      <a class="btn primary" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Download for Windows</a>
+      <a class="solid lg" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Download 0.1.45</a>
     </section>
 
     <footer>
       <span>KARU Tweaks</span>
-      <p>karu999.github.io/en-eu</p>
+      <span>karu999.github.io/en-eu</span>
     </footer>
   </div>
 </body>
