@@ -4,65 +4,138 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KARU Tweaks</title>
-  <meta name="description" content="KARU Tweaks laittaa kilpailuasetukset päälle pelin ajaksi ja palauttaa ne, kun lopetat.">
+  <meta name="description" content="KARU Tweaks laittaa Windowsin kilpailukuntoon pelin ajaksi ja palauttaa asetukset, kun lopetat.">
   <link rel="canonical" href="https://karu999.github.io/fi-fi/">
   <link rel="alternate" hreflang="fi" href="https://karu999.github.io/fi-fi/">
   <link rel="alternate" hreflang="en" href="https://karu999.github.io/en-eu/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <a class="brand" href="/fi-fi/">KARU</a>
-      <nav>
+    <header class="nav">
+      <a class="brand" href="./"><span class="mark">K</span> KARU</a>
+      <nav class="links">
         <a href="#product">Tuote</a>
+        <a href="#pricing">Hinta</a>
         <a href="#download">Lataus</a>
-        <span class="locales">
-          <a href="/en-eu/">EN-EU</a>
-          <a href="/fi-fi/" aria-current="page">FI-FI</a>
-        </span>
       </nav>
+      <div class="nav-right">
+        <span class="locales">
+          <a href="../en-eu/">EN-EU</a>
+          <a href="./" aria-current="page">FI-FI</a>
+        </span>
+        <a class="solid" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Lataa</a>
+      </div>
     </header>
 
     <section class="hero">
-      <p class="kicker">Windows · kilpailu</p>
-      <h1>Asetukset pelin ajaksi, sitten takaisin.</h1>
-      <p class="lead">KARU Tweaks on Windows-sovellus. Game Mode laittaa kilpailusetin päälle, kun peli on auki, ja palauttaa sen kun painat Stop. Fortnitella ja Valorantilla on omat asetustiedostot. BIOS-kohdat, joita Windows ei voi vaihtaa, jäävät ohjeeksi BIOS-valikkoon.</p>
+      <p class="kicker">Windows kilpailupelaamiseen</p>
+      <h1>Kone kuntoon pelin ajaksi.</h1>
+      <p class="lead">KARU Tweaks laittaa kilpailusetin päälle, kun peli on auki, ja palauttaa asetukset kun painat Stop. Fortnitella ja Valorantilla on omat asetustiedostot. BIOS-kohdat, joita Windows ei voi vaihtaa, jäävät ohjeeksi BIOS-valikkoon.</p>
       <div class="actions">
-        <a class="btn primary" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Lataa 0.1.45</a>
-        <a class="btn" href="#product">Mitä se tekee</a>
+        <a class="solid lg" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Lataa Windowsille</a>
+        <a class="ghost lg" href="#pricing">Katso hinta</a>
+      </div>
+      <div class="stage">
+        <div class="window">
+          <div class="winbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><strong>KARU Tweaks</strong></div>
+          <div class="win">
+            <aside class="side">
+              <div class="on">Home</div>
+              <div>Game Mode</div>
+              <div>Hardware</div>
+              <div>Network</div>
+              <div>Fixes</div>
+            </aside>
+            <div class="panel">
+              <div class="meters">
+                <div class="meter"><span>CPU</span><b>Valmis</b></div>
+                <div class="meter"><span>GPU</span><b>Teho</b></div>
+                <div class="meter"><span>Ajastin</span><b>0,5 ms</b></div>
+              </div>
+              <div class="mode">
+                <div>
+                  <strong>Game Mode</strong>
+                  <p>Menee päälle avoinna olevalle pelille. Stop palauttaa tallennetut arvot.</p>
+                </div>
+                <span class="pill">Stop</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="grid" id="product">
+    <section class="facts" id="product">
       <article>
-        <span>01</span>
         <h2>Game Mode</h2>
-        <p>Yksi Apply avoinna olevalle pelille. Suoritin, kaappaus ja ajastin vaihtuvat sen pelin ajaksi. Stop palauttaa tallennetut arvot.</p>
+        <p>Yksi Apply pelin ajaksi. Suoritin, kaappaus ja ajastin vaihtuvat, ja palaavat sen jälkeen.</p>
       </article>
       <article>
-        <span>02</span>
         <h2>Jokainen peli</h2>
-        <p>Fortnite kirjoittaa oman grafiikkatiedoston, ja näkyvyys jää mediumiin. Valorant saa koko näytön ja VSyncin pois. Vanguard jää päälle.</p>
+        <p>Fortniten näkyvyys jää mediumiin. Valorant saa koko näytön ja VSyncin pois. Vanguard jää päälle.</p>
       </article>
       <article>
-        <span>03</span>
-        <h2>Premium</h2>
-        <p>Yleiset Windows-kytkimet ovat ilmaisia. Kilpailusivut ovat 45 euroa. Jokaisella maksullisella kytkimellä on palautus.</p>
+        <h2>Jokaisella kytkimellä on palautus</h2>
+        <p>Kun kytket tweakin pois, sen kirjoittamat arvot palaavat. Sovellus lukee nykyisen asetuksen ennen muutosta.</p>
       </article>
+    </section>
+
+    <section class="section">
+      <h2>Mitä saat</h2>
+      <p>Samat työkalut kuin sovelluksessa, ilman keksittyjä FPS-lukuja.</p>
+      <div class="grid">
+        <article class="card"><span>01</span><h3>Ajastin</h3><p>0,5 ms silloin kun haluat. Tallennettu ajastin voittaa Game Moden oletuksen.</p></article>
+        <article class="card"><span>02</span><h3>Verkko</h3><p>DNS, sovittimen säätö ja bufferbloat-tarkistus. Palomuuri jää päälle.</p></article>
+        <article class="card"><span>03</span><h3>Virta</h3><p>Kilpailuvirrankäyttö pelin ajaksi. Vanhat arvot tallennetaan.</p></article>
+        <article class="card"><span>04</span><h3>Näytönohjain ja hiiri</h3><p>Peli tehokkaammalle näytönohjaimelle, ja Windowsin hiiren kiihtyvyys pois.</p></article>
+        <article class="card"><span>05</span><h3>BIOS-ohje</h3><p>Sivu lukee emolevyn ja näyttää suositellut arvot. Firmwaren vaihdat BIOS-valikossa.</p></article>
+        <article class="card"><span>06</span><h3>Korjaukset</h3><p>Jumittunut tehtäväpalkki, DNS, ääni, ja Roblox 268 -suojausten palautus.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <h2>Hinta</h2>
+      <p>Yleiset Windows-kytkimet ovat ilmaisia. Kilpailusivut ovat yksi premium.</p>
+      <div class="prices">
+        <article class="price">
+          <span>Ilmainen</span>
+          <h3>Yleinen</h3>
+          <b>0 EUR</b>
+          <ul>
+            <li>Ilmoitukset, widgetit ja ulkoasu</li>
+            <li>Asennuspaketti ja sovellus</li>
+            <li>Palautus käyttämissäsi kytkimissä</li>
+          </ul>
+        </article>
+        <article class="price hot">
+          <span>Premium</span>
+          <h3>Kilpailu</h3>
+          <b>45 EUR</b>
+          <ul>
+            <li>Game Mode</li>
+            <li>Laitteisto, verkko ja virta</li>
+            <li>Fortniten ja Valorantin asetukset</li>
+          </ul>
+          <a class="solid" href="#download">Lataa ensin</a>
+        </article>
+      </div>
     </section>
 
     <section class="band" id="download">
       <div>
         <h2>Windows 10 ja 11</h2>
-        <p>Asennuspaketti on KARU Tweaks 0.1.45. Aja se sillä koneella, jolla pelaat. Sovellus lukee nykyiset asetukset ennen kuin se muuttaa niitä.</p>
+        <p>KARU Tweaks 0.1.45. Asenna se sillä koneella, jolla pelaat.</p>
       </div>
-      <a class="btn primary" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Lataa Windowsille</a>
+      <a class="solid lg" href="https://github.com/Karu999/karu-tweaks/releases/download/v0.1.45/KARU-Tweaks-Setup.exe">Lataa 0.1.45</a>
     </section>
 
     <footer>
       <span>KARU Tweaks</span>
-      <p>karu999.github.io/fi-fi</p>
+      <span>karu999.github.io/fi-fi</span>
     </footer>
   </div>
 </body>
