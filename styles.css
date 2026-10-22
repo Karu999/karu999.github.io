@@ -90,6 +90,7 @@ h1 { margin: 0; font-size: clamp(52px, 7vw, 84px); line-height: 0.94; letter-spa
 .center p, .sub { color: var(--mute); }
 h2 { margin: 8px 0; font-size: clamp(32px, 4vw, 52px); letter-spacing: -0.045em; }
 
+.group { margin: 28px 0 12px; font-size: 18px; letter-spacing: -0.03em; }
 .packages, .services, .steps { display: grid; gap: 12px; }
 .packages { grid-template-columns: 1fr 1fr; }
 .services, .steps { grid-template-columns: repeat(3, 1fr); }
